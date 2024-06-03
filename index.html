@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Server Room</title>
+  <link id="microverse-css" rel="stylesheet" href="./assets/css/microverse.css" />
+  <script defer src="lib/index-3bb4cf50.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/DRACOLoader.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <style>
+      #serverInfo {
+          position: absolute;
+          display: none;
+          padding: 10px;
+          z-index: 1000;
+      }
+      #barChart {
+          position: absolute;
+          display: none;
+          background:lightblue;
+          padding: 10px;
+          border: 1px solid #ccc;
+          z-index: 1000;
+          top: 400px; 
+          
+          left: 10px;
+          bottom: 100px;
+
+      }
+  </style>
+</head>
+
+
+<body class="no-select" style="position: relative;">
+  <div id="serverInfo"></div>
+
+  <!-- <canvas id="barChart" width="50" height="50" style="width: 50px; height: 50px; box-sizing: border-box; display: block;"></canvas> -->
+    <canvas id="barChart" width="50" height="50"></canvas>
+
+    <!-- Your Three.js and other script tags here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+</body>
+
+</html>
