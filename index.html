@@ -15,39 +15,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
   <style>
-      #serverInfo {
-          position: absolute;
-          display: none;
-          padding: 10px;
-          z-index: 1000;
-      }
-      #barChart {
-          position: absolute;
-          display: none;
-          background:lightblue;
-          padding: 10px;
-          border: 1px solid #ccc;
-          z-index: 1000;
-          top: 400px; 
-          
-          left: 10px;
-          bottom: 100px;
-
-      }
+    #serverInfo {
+      position: absolute;
+      display: none;
+      padding: 1px;
+      top: 60px !important;
+      z-index: 1000;
+      font-size: 10px;
+      width: auto;
+      height: auto;
+      left: 5 !important;
+      line-height: 0.5; /* Adjusted line-height to decrease gap between lines */
+    }
+    #barChart {
+      position: absolute;
+      display: none;
+      /* background-color: rgba(29, 78, 216, 0.6); */
+      background-color: whitesmoke;
+      padding: 10px;
+      border: 1px solid #ccc;
+      z-index: 1000;
+      top: 270px !important;
+      /* color: #ffffff !important; */
+      /* font-size: 20px !important; */
+      left: 5px;
+      bottom: 100px;
+      height: 330px !important;
+      width: 330px !important;
+    }
   </style>
 </head>
 
-
 <body class="no-select" style="position: relative;">
   <div id="serverInfo"></div>
-
-  <!-- <canvas id="barChart" width="50" height="50" style="width: 50px; height: 50px; box-sizing: border-box; display: block;"></canvas> -->
-    <canvas id="barChart" width="50" height="50"></canvas>
-
-    <!-- Your Three.js and other script tags here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   
+  <canvas id="barChart" style="font-size: 20px !important;" ></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>

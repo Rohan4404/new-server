@@ -120,7 +120,7 @@ class ModelPawn extends PawnBehavior {
             const highlightMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 });
             object.material = highlightMaterial;
 
-            // Store highlighted objectsss
+            // Store highlighted object
             highlightedObject = object;
         };
 
@@ -151,8 +151,8 @@ class ModelPawn extends PawnBehavior {
                 return;
             }
         
-            lineChartCanvas.width = 50; // Set the width to 200px
-            lineChartCanvas.height = 50; // Set the height to 200px
+            lineChartCanvas.width = 200; // Set the width to 200px
+            lineChartCanvas.height = 150; // Set the height to 150px
         
             const ctx = lineChartCanvas.getContext('2d');
         
@@ -175,7 +175,28 @@ class ModelPawn extends PawnBehavior {
             const options = {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            font: {
+                                size: 14 // Increase font size for y-axis labels
+                            }
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 14 // Increase font size for x-axis labels
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                size: 16 // Increase font size for legend labels
+                            }
+                        }
                     }
                 }
             };
@@ -274,4 +295,3 @@ export default {
         pawnBehaviors: [ModelPawn]
     }]
 };
-
